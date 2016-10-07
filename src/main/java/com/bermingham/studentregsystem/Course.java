@@ -26,4 +26,10 @@ public class Course {
         moduleList.add(x);
     
     }
+    public void displayCourse(){
+        for(Module x : moduleList) {
+            x.displayModule();
+            System.out.printf(" %s /n", courseName);
+        }
+    }
 }

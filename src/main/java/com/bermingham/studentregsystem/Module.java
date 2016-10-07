@@ -26,6 +26,12 @@ public class Module {
         studentList.add(x);
     
     }
+    public void displayModule(){
+        for(Student x : studentList) {
+            x.displayStudent();
+            System.out.printf(" %s %s", moduleName, moduleID);
+        }
+    }
     
 }
 //= new ArrayList<Student>()

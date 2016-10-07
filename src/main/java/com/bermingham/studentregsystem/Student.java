@@ -30,5 +30,7 @@ public class Student {
         username = studentName + age;
         return username;
     }
-    
+    public void displayStudent(){
+    System.out.printf("%s %s ", studentName,  studentID);
+    }
 }
