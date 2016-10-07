@@ -5,11 +5,25 @@
  */
 package com.bermingham.studentregsystem;
 
+import java.util.*;
+import org.joda.time.DateTime;
+
 /**
  *
  * @author Brian
  */
 public class Course {
     private String courseName;
+    List<Module> moduleList;
+    private DateTime startDate, endDate;
     
+    private Course(String courseName){
+    this.courseName = courseName;
+    this.moduleList = new ArrayList<>();
+    }
+    
+    public void addModule(Module x){
+        moduleList.add(x);
+    
+    }
 }

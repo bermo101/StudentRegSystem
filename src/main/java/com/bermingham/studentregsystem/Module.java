@@ -5,10 +5,27 @@
  */
 package com.bermingham.studentregsystem;
 
+import java.util.*;
+
 /**
  *
  * @author Brian
  */
 public class Module {
+    private final String moduleName;
+    private final String moduleID;
+    List<Student> studentList;
+    
+    public Module(String mdlName, String mdlID){
+        this.moduleName = mdlName;
+        this.moduleID = mdlID;
+        this.studentList = new ArrayList<>();
+        }
+    
+    public void addstudent(Student x){
+        studentList.add(x);
+    
+    }
     
 }
+//= new ArrayList<Student>()
