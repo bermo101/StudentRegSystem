@@ -14,11 +14,13 @@ import org.joda.time.DateTime;
  */
 public class Course {
     private String courseName;
+    private String courseCode;
     List<Module> moduleList;
     private DateTime startDate, endDate;
     
-    private Course(String courseName){
+    public Course(String courseName, String courseCode){
     this.courseName = courseName;
+    this.courseCode = courseCode;
     this.moduleList = new ArrayList<>();
     }
     
